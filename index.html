@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi primera web</title>
+
+    <!-- Intro a CSS -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--Encabezados-->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <!--Párrafos-->
+    <hr>
+    <p>Este es un párrafo en mi primera web</p>
+    <p>Este es otro párrafo en mi primera web</p>
+    <p>h1 a h6 se utiliza para definir encabezados de diferentes niveles</p>
+    <p>El elemento p se utiliza para definir párrafos de texto</p>
+    <p>hr se utiliza para definir una línea horizontal que servirá como separador</p>
+    <!-- Este texto es un comentario y no va a aparecer en el código-->
+    <p>Este texto es <span style="color: blue;">mucho más largo</span> y es para mostrar <br> 
+        la etiqueta de span!</p>
+    <p>br se utiliza para definir un salto de línea</p>
+    <a target="_blank" href="https://www.google.com">Ir a google</a>
+    <p>a se utiliza para definir un hipervínculo</p>
+    <p>target se utiliza para especificar dónde se abrirá el enlace</p>
+    <!--Imágenes-->
+    <hr>
+    <img src="./img/logoItl.png" alt="Logo ITL" width="400px" height="400px"/>
+    <hr>
+    <!-- Formularios -->
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" value="Mundo" id="apellido" name="apellido" placeholder="Escribe tu apellido">
+        <p>Hay varios tipos de type para input, como text, password, email, etc.</p>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea rows="10" cols="50" name="comentario" id="comentario" placeholder="Escribe tu comentario"></textarea>
+            <p>Value se usa para definir el valor inicial de un campo de entrada.</p>
+        <br>
+        <input type="submit"/>
+        <p>Hay diferentes valores type para el button, como submit, reset, button, etc.</p>
+        <br>
+    </form>
+    <br>
+    <p>ul se utiliza para definir una lista desordenada</p>
+    <!-- Ul es una lista no ordenada -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <p>ol se utiliza para definir una lista ordenada</p>
+    <!-- Ol es una lista ordenada -->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li value="50">Elemento 50</li>
+        <li>
+        <!-- Lista anidada -->
+        <ol>
+            <li style="list-style-type: lower-alpha;">Sub Elemento A</li>
+            <li style="list-style-type: lower-alpha;">Sub Elemento B</li>
+            <li style="list-style-type: lower-alpha;">Sub Elemento C</li>
+        </ol>
+        </li>
+    </ol>
+    
+    <br>
+    <!-- Tablas -->
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; padding: 8px;">Producto</th>
+                <th style="border: 1px solid black; padding: 8px;">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola besat</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Hola Hose</td>
+                <td>19.99$</td>
+            </tr>
+            <tr>
+                <td>Hola Hose Hose</td>
+                <td>23.99$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Total: 49.8$</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Thead y Tbody se utilizan para agrupar el contenido de las tablas.</p>
+</body>
+
+<!-- 
+Git --version es para mostrar la versión instalada de Git
+git config --global user.name "Tu Nombre" es para configurar el nombre de usuario
+git config --global user.email "tu.email@example.com" es para configurar el correo electrónico
+git config --list es para listar la configuración actual de Git
+git init es para inicializar un nuevo repositorio Git
+git status es para mostrar el estado del repositorio
+git add . es para agregar todos los archivos al área de preparación
+git commit -m "Mensaje del commit" es para crear un nuevo commit con un mensaje
+
+git remote add origin URL_DEL_REPOSITORIO es para agregar un repositorio remoto
+git branch -M main es para renombrar la rama actual a "main"
+git push -u origin main es para subir los cambios al repositorio remoto
+
+Flujo de trabajo diario:
+git status
+git add .
+git commit -m "Descripción del cambio"
+git push
+
+git pull es para actualizar el repositorio local con los cambios del remoto
+
+Ramas
+git checkout -b nueva-funcionalidad es para crear y cambiar a una nueva rama
+git checkout main es para cambiar a la rama main
+git merge nueva-funcionalidad es para fusionar la rama nueva-funcionalidad en la rama actual
+
+Comandos útiles
+git log --oneline --graph --decorate es para mostrar el historial de commits en una sola línea
+git checkout -- index.html es para descartar cambios en un archivo específico
+git clone URL_DEL_REPOSITORIO es para clonar un repositorio remoto
+-->
+</html>
