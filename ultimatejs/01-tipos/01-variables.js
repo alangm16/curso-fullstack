@@ -1,0 +1,10 @@
+let nombre = "Hola Mundo";
+let NombreCompleto;
+let nombreCompleto;
+let nombre_completo;
+let apellido, animal;
+apellido = "Gómez";
+animal = "Perro";
+console.log(nombre);
+console.log(apellido);
+console.log(animal);
